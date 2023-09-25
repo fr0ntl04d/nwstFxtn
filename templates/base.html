@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="theme" rel="stylesheet" href="{{ url_for('static', filename='lightmode.css') }}">
+    <link  href="{{ url_for('static', filename='layout.css') }}" rel="stylesheet"  type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        
+        
+</head>
+<body>
+    {% include 'popout_Nav.html' %}
+    <header>
+        {% include 'header.html' %}
+    </header>
+
+    <main>
+        
+        {% block content %}
+            {%block hero%}
+                {% block hero_text %}
+                {% endblock hero_text %}
+            {% endblock hero %}
+        {% endblock content %}
+
+    </main>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

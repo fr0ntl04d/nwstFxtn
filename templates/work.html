@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Work - Example 
+{% endblock %}
+
+{% block content %}
+{% block hero %}
+<section class="hero">
+  <div class="stars stars1"></div>
+  <div class="stars stars2"></div>
+  <div class="stars stars3"></div>
+  <div class="static-star stars4"></div>
+    <div class="darken">
+     {% block hero_text %}
+     <h2>Awesome projects from</h2>
+     <h1>Amazing Clients</h1>
+    {% endblock %}
+    </div>
+  </section>
+{% endblock %}
+<section class="cards">
+    <div class="row">
+      <div class="card one-half-img">
+        <a href="https://web.archive.org/web/20180205123007/http://anthemmusiclessons.com/index.php" target="_blank"><img src="/static/img/anthem1.png" alt="Anthem" /></a>
+          <div class="card-content">
+        <h3>Anthem Music Lessons</h3>
+        <p class="italic">Music Studio</p>
+        <p class="preview">Anthem Music Lessons is a music lesson studio in Los Angeles, California. They needed a website to simplify how to contact them and see what instruments they teach.<br> </p><p class="more"> Their previous website was made from a site builder provided by their hosting company. It was outdated, not mobile-friendly,
+          and very difficult to navigate. I built them a new site with a Concrete5 CMS (Content Management System) so they would be able to update their site as they please.</p>
+          <a class="btn read_less">Read Less</a>
+        <a class="btn read_more">Read More</a>
+          </div>
+       
+      </div>
+  
+      <div class="card one-half-img">
+        <a href="navatamardesigns.com" target="_blank"><img src="/static/img/nava1.png" alt="Nava Tamar Designs" /></a>
+          <div class="card-content">
+        <h3>Nava Tamar Designs</h3>
+        <p class="italic">Interior Design</p>
+        <p class="preview">Nava Tamar is an interior designer and decorator located in Beverly Hills, California. She needed an clean, minimal portfolio website to showcase her elegant work.</p> <p class="more"> I built her a minimal, mobile-friendly, "static" html website I don't want to distract users from a flashy
+          website but to draw the focus on her beautiful portfolio.</p>
+          <a class="btn read_less">Read Less</a>
+        <a class="btn read_more">Read More</a>
+          </div>
+       
+      </div>
+    </div>
+     
+    <div class="row">
+      <div class="card one-half-img">
+        <a href="http://www.virtuas.org/" target="_blank"><img src="/static/img/virtuas1.png" alt="Virtuas" /></a>
+        <div class="card-content">
+          <h3>Virtuas, Inc.</h3>
+        <p class="italic">Virtual Assistant Service</p>
+          <p class="preview">Virtuas, Inc. is a virtual assistant service located in Los Angeles, California. They needed a website to help drive in clientelle. I built her a site with Wordpress.</p><p class="more"> They're constantly growing so they need to be able to update the services they
+          offer as soon as they can offer them. They needed something as easy, portable, reliable as they are. Updates need to be done "on the fly" so wordpress was an excellent choice.</p>
+          <a class="btn read_less">Read Less</a>
+        <a class="btn read_more">Read More</a>
+        
+        </div>
+        </div>
+
+        <div class="card one-half-img">
+          <a href="oyhfs.org" target="_blank"><img src="/static/img/oyhfs.png" alt="Optimist Youth Home & Family Services" /></a>
+            <div class="card-content">
+          <h3>Optimist Youth Home & Family Services</h3>
+          <p class="italic">Non-Profit</p>
+          <p class="preview">Optimist Youth Homes and Family Services is a non-profit organization that provides a wide range of services to at-risk youth and families in Southern California. Their programs include residential treatment, mental health services, foster care, education, and workforce development. The organization aims to empower individuals and families to overcome challenges and build brighter futures through comprehensive and compassionate support.</p>
+          <p class="more">As part of their website modernization efforts, I have redesigned and streamlined Optimist Youth Homes and Family Services' website. By reorganizing the content and removing extraneous information, the website now offers a clear and concise message: helping kids in need. The fresh new look and improved navigation make it easier for visitors to find the information they need and connect with the organization's mission of providing support and care to at-risk youth and families in Southern California.</p>
+            <a class="btn read_less">Read Less</a>
+          <a class="btn read_more">Read More</a>
+            </div>
+          </div>
+      </div>
+    
+  </section>
+{% endblock content %}

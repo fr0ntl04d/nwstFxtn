@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About - Example 
+{% endblock %}
+
+{% block content %}
+{% block hero %}
+<section class="hero">
+  <div class="stars stars1"></div>
+  <div class="stars stars2"></div>
+  <div class="stars stars3"></div>
+  <div class="static-star stars4"></div>
+    <div class="darken">
+     {% block hero_text %}
+     <h2>Learn what I can do to</h2>
+     <h1>Make your website Great</h1>
+    {% endblock %}
+    </div>
+  </section>
+{% endblock %}
+<section id="about" class="rows">
+    <div class="row ">
+      <div class="content">
+        <div id="me" class="circle-img"></div>
+        <div class="container">
+        <p>My name is Jordan Mulhall, I'm a web designer, developer, and US Navy Veteran living in Kitsap County, WA. 
+          I've been in the Website Industry for over 5 years as both a Freelancer and as a Project Manager for a design firm.</p>
+          <p>I've contributed to projects as big as custom designed CRM (Customer Relationship Management) Systems, down 
+            to simple informational landing pages for client promotions or events. 
+            I have the experience and expertise of a development firm, without the expensive overhead costs they tack onto your bill.</p>
+            <p>It doesn’t matter if you are looking for a total makeover or a tweak to your current site; you can be sure that you’re in safe hands.</p>
+          </div>
+            
+            </div>
+      </div>
+  <div class="row">
+    <div class="content reversed">
+      <div  id="my-dog" class="circle-img"></div>
+      <div class="container">
+      <p>I like long mountain hikes and kayaking in the beautiful Pacific North West. 
+        I’m also the humble servant to a very intelligent Corgi named Olive, as well as four cats (Cooper, Dexter, Finn, & George).</p>
+      
+        <p>My “non-code” hobbies include Photography, Leatherworking, Guitar, & Cooking to name a few!</p>
+      
+    </div>
+  </div>
+  </div>
+  </section>
+{% endblock content %}

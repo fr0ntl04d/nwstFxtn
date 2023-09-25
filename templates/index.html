@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home - Example 
+{% endblock %}
+
+{% block content %}
+{% block hero %}
+<section class="hero">
+  <div class="stars stars1"></div>
+  <div class="stars stars2"></div>
+  <div class="stars stars3"></div>
+  <div class="static-star stars4"></div>
+    <div class="darken">
+     {% block hero_text %}
+      <h2>The Online Portfolio of</h2>
+      <h1>Jordan Mulhall</h1>
+    {% endblock %}
+    </div>
+  </section>
+{% endblock %}
+  <section class="cards">
+    <h2 class="cardsTitle">How I can help</h2>
+    <div class="row">
+    <div class="card one-third lighten">
+      <h2>Branding</h2>
+      <p>Establishing a strong brand is essential for any web site client as it helps create a unique identity, fosters trust and loyalty among customers, and sets the foundation for business growth. Without a brand, businesses risk blending in with the competition and missing out on potential customers. As a web designer, I understand the significance of branding and can help clients develop a strong brand that reflects their vision and values, and resonates with their target audience.</p>
+    </div>
+    <div class="card one-third lighten">
+      
+      <h2>Web Design</h2>
+      <p>Having a well-designed website is crucial for any business looking to establish a strong online presence. A website that is visually appealing, easy to navigate, and provides a seamless user experience can help build trust, drive traffic, and ultimately increase conversions. As a website designer, I understand the importance of creating a website that not only looks great but also meets the needs of the business and its customers. I am committed to designing websites that are both aesthetically pleasing and highly functional, to help my clients achieve their online goals.</p>
+      
+    </div>
+    <div class="card one-third lighten">
+      <h2>Online Marketing</h2>
+      <p>Effective online marketing campaigns can make a significant impact on a business's success by increasing brand awareness, driving traffic, and generating leads. However, managing such campaigns can be time-consuming and challenging, especially for businesses without a dedicated marketing team. As a professional with experience in managing online marketing campaigns, I can help businesses achieve their goals by developing customized strategies, creating compelling content, and monitoring performance to optimize results. By partnering with me, businesses can focus on their core operations while knowing their online marketing efforts are in capable hands.</p>
+    </div>
+    </div>
+  </section>
+  <section id="two">
+    <h2>Your Website Shouldn't Be An Afterthought</h2>
+    <p>In today's digital age, every company, regardless of size, must have a strong online presence. Your website is a vital tool for showcasing your brand and connecting with your customers. A poorly designed or underperforming website can lead to frustrated customers who may take their business elsewhere.</p>
+      <p>A well-crafted website can provide essential information to potential and loyal customers alike, such as operating hours, promotions, and contact information. With a user-friendly and visually appealing website, you can set yourself apart from the competition and attract new customers to your business. Don't let your website be an afterthought - invest in a quality online presence today.</p>
+      <a href="about.html" target="_blank"><button>Learn More</button></a>
+  </section>
+{% endblock content %}
